@@ -24,50 +24,49 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom GRAYSCALE CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/index.css" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="css/trainhackers.css">
-	<title>NHS hacks - Innovating health education.</title></head>
+	<title>MEDx - Innovating medical education.</title></head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header" style="position: relative">
-                <a class="navbar-brand page-scroll" style="background-color: black; height: 130px; width: 130px; position: absolute; border-radius: 200px; padding-top: 50px; padding-right: 20px; margin-top:-20px" href="#page-top">
-                    <img class="about-main-logoimg img-responsive" src="img/logos/hackathon-logo-white.png">
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#partners">Partners</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#apply">Organizers</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll btn btn-default" href="#studies">Apply now</a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header" style="position: relative">
+            <a class="navbar-brand page-scroll" style="background-color: black; height: 130px; width: 130px; position: absolute; border-radius: 200px; padding-top: 50px; padding-right: 20px; margin-top:-20px" href="#page-top">
+                <img class="about-main-logoimg img-responsive" src="img/logos/hackathon-logo-white.png">
+            </a>
         </div>
-    </nav>
 
-<div id="particles-js"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/JGR03TzZONA?autoplay=1&loop=1&playlist=JGR03TzZONA" frameborder="0" allowfullscreen></iframe></div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#partners">Partners</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#apply">Organizers</a>
+                </li>
+                <li>
+                    <a class="page-scroll btn btn-default" href="#studies">Apply now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div id="player-wrapper">
+    <div id="player"></div>
+</div>
 
 <section class="aboutSection fluid-container">
 	<div class="container">
@@ -109,9 +108,10 @@
     
     <section id="apply" class="container content-section text-center" style="width: 100%">
         <div id="type-form-parent" class="row">
-            <h1>APPLY NOW!</h1>
-            <div class="col-md-12" style="background: white; border-radius: 30px; padding: 10px 10px 10px 10px; height: 700px">
-                <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://hackaerbil.typeform.com/to/P7Uvgo" style="display:none;"></iframe>
+            <a class="typeform-share" href="https://hackpartners.typeform.com/to/Tu7SFf" data-mode="1" target="_blank"><h1 class="h1-typeform-btn" style="width: 100%; text-align: center;">Apply Now</h1></a>
+            <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id="typef_orm",b="https://s3-eu-west-1.amazonaws.com/share.typeform.com/";if(!gi.call(d,id)){js=ce.call(d,"script");js.id=id;js.src=b+"share.js";q=gt.call(d,"script")[0];q.parentNode.insertBefore(js,q)}id=id+"_";if(!gi.call(d,id)){qs=ce.call(d,"link");qs.rel="stylesheet";qs.id=id;qs.href=b+"share-button.css";s=gt.call(d,"head")[0];s.appendChild(qs,s)}})()</script>
+            <div class="col-md-12" style="background: white; border-radius: 30px;">
+                <iframe id="typeform-full" width="100%" frameborder="0" src="" style="display:none; height: 700px"></iframe>
             </div>
         </div>
     </section>
@@ -120,11 +120,10 @@
 
   <script type="text/javascript" src="js/external/jquery.js"></script>
   <!--<script type="text/javascript" src="js/trainhackers/particles.min.js"></script>-->
-	<script type="text/javascript" src="js/trainhackers/main.js"></script>
 
     <script src="js/external/bootstrap.min.js"></script>
     <script src="js/external/jquery.easing.min.js"></script>
-    <script src="js/index/grayscale.js"></script>
+    <script src="js/index/index.js"></script>
 
 <noscript><p><img src="//localhost:8888/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->

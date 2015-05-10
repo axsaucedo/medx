@@ -7,7 +7,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubePlayerAPIReady() {
   
-  var VIDEO_ID = 'hZwrOelxA2s';
+  var VIDEO_ID = 'JGR03TzZONA';
 
   player = new YT.Player('player', {
       height: window.screen.height*1.3,
@@ -22,6 +22,7 @@ function onYouTubePlayerAPIReady() {
           'showsearch' : 0,
           'enablejsapi' : 1,
           'start': 0,
+          'end': 60,
           'vq': 'hd1080',
           'playlist': VIDEO_ID,
       },
@@ -35,38 +36,42 @@ function onYouTubePlayerAPIReady() {
 function onPlayerReady(event) {
   $("#player").show();
   event.target.mute();
-  $("#player").css("margin-left", -window.screen.width*.5);
+  $("#player").css("margin-left", -window.screen.width*.6);
+  $("#player").css("margin-top", -window.screen.width*.2);
 }
 
-// $(function() {
-//     $('#typeform-full').attr("src", "https://axsauze.typeform.com/to/GFChYr");
+$(function() {
+  // jQuery to collapse the navbar on scroll
+  $(window).scroll(function() {
+      if ($(".navbar").offset().top > 50) {
+          $(".navbar-fixed-top").addClass("top-nav-collapse");
+      } else {
+          $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      }
+      console.log("lol")
+  });
 
-//     $('#typeform-full').on('load', function() {
-//         setTimeout(function() { $('#typeform-full').show() }, 5000);
-//     });
+  $('a.page-scroll').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top
+      }, 1500, 'easeInOutExpo');
+      event.preventDefault();
+  });
+
+  // Closes the Responsive Menu on Menu Item Click
+  $('.navbar-collapse ul li a').click(function() {
+      $('.navbar-toggle:visible').click();
+  });
+
+  $('#typeform-full').attr("src", "https://hackpartners.typeform.com/to/Tu7SFf");
+
+    $('#typeform-full').on('load', function() {
+        setTimeout(function() { $('#typeform-full').show() }, 5000);
+    });
+
+  (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id="typef_orm",b="https://s3-eu-west-1.amazonaws.com/share.typeform.com/";if(!gi.call(d,id)){js=ce.call(d,"script");js.id=id;js.src=b+"share.js";q=gt.call(d,"script")[0];q.parentNode.insertBefore(js,q)}id=id+"_";if(!gi.call(d,id)){qs=ce.call(d,"link");qs.rel="stylesheet";qs.id=id;qs.href=b+"share-button.css";s=gt.call(d,"head")[0];s.appendChild(qs,s)}})()
+});
 
 
-//     // var clock;
-//     // var now       = new Date();
-//     // var deadline  = new Date(2015, 01, 01, 12);
 
-//     // var dif = deadline.getTime() - now.getTime()
-
-//     // var seconds_left = dif / 1000;
-//     // console.log(now, deadline)
-//     // console.log(seconds_left);
-    
-//     // $(document).ready(function() {
-//     //     var clock;
-
-//     //     clock = $('.clock').FlipClock({
-//     //         clockFace: 'DailyCounter',
-//     //         autoStart: true
-//     //     });
-                
-//     //     clock.setTime(seconds_left);
-//     //     clock.setCountdown(true);
-//     //     clock.start();
-
-//     // });
-// });
