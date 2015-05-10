@@ -50,8 +50,6 @@ ul {
     .aboutSection .logo img {
       position: relative;
       display: inline-block;
-      width: 80%;
-      max-width: 265px;
       margin-top: auto; }
     .aboutSection .logo .text p {
       position: relative;
